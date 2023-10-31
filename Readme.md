@@ -19,10 +19,6 @@ require 'vendor/autoload.php';
 $generator = new Picqer\Barcode\BarcodeGeneratorHTML();
 echo $generator->getBarcode('081231723897', $generator::TYPE_CODE_128);
 ```
-
-Will result in this beauty:<br>
-![Barcode 081231723897 as Code 128](tests/verified-files/081231723897-ean13.svg)
-
 The `getBarcode()` method accepts the following parameters:
 - `$barcode` String needed to encode in the barcode
 - `$type` Type of barcode, use the constants defined in the class
